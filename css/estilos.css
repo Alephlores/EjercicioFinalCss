@@ -1,0 +1,248 @@
+*{
+	box-sizing:border-box;
+}
+
+body {
+	font-family: 'Dancing Script', cursive;
+	background-color: #02010a;
+	width: 900px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+header{
+	background: #5b7989;
+	border-radius: 10px 10px 0px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-animation-name: slidein;
+	-webkit-animation-duration: 4s;
+	animation-name: slidein;
+	animation-duration: 2s;
+}
+
+
+	/* Safari*/
+	@-webkit-keyframes slidein {
+	    0%   {margin-top: 150%;}
+	    60%  {margin-top: -5%;}
+	    100%  {margin-top: 0%;}
+	}
+
+	/* Standard */
+	@keyframes slidein {
+	    0%   {margin-top: 150%;}
+	    60%  {margin-top: -5%;}
+	    100%  {margin-top: 0%;}
+	}
+
+
+.titulo {
+	font-size: 1.2em;
+	width: 50%;
+	text-align: center;
+	color: white;
+	text-shadow: 0 0 2px #02010a;
+	-webkit- text-shadow: 0 0 2px #02010a;
+}
+
+
+.nav {
+	font-size: 1.5em;
+	width: 50%;
+	text-align: center;
+				}
+
+.nav ul li {
+	display: inline;
+}
+
+.nav ul li a {
+	color: white;
+	padding-right: 15px;
+}
+
+.nav ul li a:(not)actived {
+	color: white;
+	padding-right: 15px;
+}
+
+.nav li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+@media screen and (max-width:900px) {
+
+	.titulo {
+			width:100%;
+			font-size: 2em;
+
+		}
+	.nav {
+			width:100%;
+			font-size: 1.8em;
+		}
+}
+
+
+.imgprinc{
+	background-color: #82c3a6;
+	width: 100%;
+	height: auto;
+	text-align: center;
+
+	}
+
+.imgprinc img{
+	width: 90%;
+	height: auto;
+	border:solid 1px black;
+	box-shadow: 2px 2px #02010a;
+	margin: 20px;
+	}
+
+.imgsec {
+		background-color: #d5c75f;
+		width: 100%;
+		height: auto;
+		padding:20px;
+		border:1px;
+		display: flex;
+		flex-wrap: wrap;
+				}
+.imgsec1 {
+			width: 50%;
+			text-align: center;
+			padding:5px;
+				}
+
+.imgsec2 {
+		width: 50%;
+		text-align: center;
+		padding:5px;
+			}
+
+.imgsec1 a, .imgsec2 a{
+								color:black;
+								font-size:2em;
+							}
+
+
+.imgsec1 img{
+	width: 100%;
+	height: auto;
+	border:solid 1px black;
+	}
+
+.imgsec1 img:hover {
+			box-shadow: #82c3a6;
+			border:solid #82c3a6 2px;
+			-ms-transform:rotate(10deg); /* IE 9 */
+			-webkit-transform:rotate(10deg); /* Safari */
+			transform:rotate(10deg);
+
+			}
+
+.imgsec2 img{
+	width: 100%;
+	height: auto;
+	border:solid 1px black;
+
+}
+
+.imgsec2 img:hover {
+			box-shadow: #82c3a6;
+			border:solid #82c3a6 2px;
+			-ms-transform: translate(50px, 100px); /* IE 9 */
+    	-webkit-transform: translate(50px, 100px); /* Safari */
+    	transform: translate(5px,-20px);
+
+			}
+
+@media screen and (max-width:900px) {
+		.imgsec1, .imgsec2 {
+				width:100%;
+				padding:20px;
+			}
+	}
+/* Apartir de aca paisajes.html y retratos.html*/
+
+.paiyret {
+			background-color: #d5c75f;
+			width: 100%;
+			height: auto;
+			padding:20px;
+			border:1px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+.paiyret1,.paiyret2,.paiyret3,.paiyret4,.paiyret5,.paiyret6 {
+				width: 33.3%;
+				text-align: center;
+					}
+
+.paiyret1 img, .paiyret2 img,.paiyret3 img,.paiyret4 img,.paiyret5 img, .paiyret6 img {
+						width: 100%;
+						height: auto;
+						padding: 5PX;
+						}
+.paiyret1 img {
+				filter:blur(10px);
+}
+
+.paiyret2 img,.paiyret4 img,.paiyret6 img{
+				filter:grayscale(100%);
+}
+
+.paiyret3 {
+				filter:sepia(100%);
+}
+
+
+@media screen and (max-width:900px) {
+		.paiyret1, .paiyret2,.paiyret3,.paiyret4,.paiyret5,.paiyret6{
+				width:100%;
+				padding:10px;
+								}
+}
+
+/* FOOTER*/
+
+footer {
+				background:  #C6d5c5;
+				border-radius: 0px 0px 10px 10px;
+				display: flex;
+				flex-wrap: wrap;
+	}
+
+	.pie1, .pie2, .pie3, .pie4 {
+							width: 25%;
+							text-align:center;
+	}
+
+	footer img{
+		width:25px;
+		height:auto;
+		margin-right: 10px;
+
+	}
+
+	footer  a {
+			display: block;
+	    font-size: 14px;
+	    padding: 7px 12px 7px 5px;
+	    text-decoration: none;
+	}
+
+	@media screen and (max-width:900px) {
+
+		.pie1, .pie2, .pie3, .pie4  {
+				width:100%;
+				font-size:2em;
+				text-align:center;
+
+			}
+		}
